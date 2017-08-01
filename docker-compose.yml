@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  wp:
+    image: adamyeats/docker-nginx-hhvm-bedrock
+    ports:
+      - "80:80"
+    links:
+      - db
+    volumes:
+      - .:/var/www/html
+    environment:
+      DB_NAME: kiddo
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: root
+
+  db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: kiddo
