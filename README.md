@@ -8,6 +8,7 @@ WordPress boilerplate with modern development tools, easier configuration, and a
 - Sage 9 Beta 3
 - Bootstrap 3
 - Docker compose file
+- Advanced Custom Fields
 
 **Requires:**
 - Docker
@@ -17,7 +18,7 @@ WordPress boilerplate with modern development tools, easier configuration, and a
 
 ## Development
 
-The following commands are using during the development process and deploy. before everything it's necessary create a `.env` file based on the `.env.example` and copy the ACF key to there.
+The following commands are used during the development process and deploy. First of all, it's necessary create a `.env` file based on the `.env.example` and copy the ACF key to there.
 
 ```bash
 # Run a docker instance
